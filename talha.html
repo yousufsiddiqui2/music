@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Talha Anjum</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="header">
+        <div class="container-fluid">
+         <nav class="navbar navbar-expand-sm navbar-dark">
+             <a class="navbar-brand" href="#" style="font-size: 45px; font-family:'Lobster',cursive; color:rgb(0, 255, 174)">Songs</a>
+             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                 aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="collapsibleNavId">
+                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                     <li class="nav-item ">
+                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Artist</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#">Library</a>
+                     </li>
+                     
+                     <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cetagory</a>
+                         <div class="dropdown-menu" aria-labelledby="dropdownId">
+                             <a class="dropdown-item" href="#">Rap</a>
+                             <a class="dropdown-item" href="#">English</a>
+                             <a class="dropdown-item" href="#">Urdu</a>
+                             <a class="dropdown-item" href="#">Hindi</a>
+                             <a class="dropdown-item" href="#">Slowed & Reverb</a>
+                             <a class="dropdown-item" href="#">Remix</a>
+                         </div>
+                     </li>
+                 </ul>
+ 
+                 <button class="login-button"><a href="">Login</a></button>
+ 
+             </div>
+         </nav>
+        </div>
+ 
+     </div>
+     <div class="container-fluid">
+    <div class="header-div">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h2><span style="color: rgb(0, 255, 157); font-size: 90px;">T</span>alha <span style="color: rgb(0, 255, 157); font-size: 90px;">A</span>njum</h2>
+                <p>Urdu <span style="color: rgb(0, 255, 157); font-size: 35px;">Rapper</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- library work start  -->
+ 
+ <section class="talha-div">
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="music-player mt-5">
+                <nav>
+                    <div class="circle">
+                        <i class="fa fa-chevron-left" aria-hidden="true" title="Nav"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-download" aria-hidden="true" title="Download"></i>
+                    </div>
+                </nav>
+                <img src="img/musics.jpg" class="song-img">
+                <h1>Agency</h1>
+                <p>Talha Anjum</p>
+
+                <audio  id="song">
+                    <source src="musics/Agency_Talha_Anjum___Rap_Demon___Prod_by_UMAIR_.mp3" type="audio/mpeg">
+                </audio>
+
+
+                <input type="range" value="0" id="progress">
+
+                <div class="control">
+                    <div><i class="fa fa-backward" aria-hidden="true" title="Backward"></i></div>
+                    <div onclick="playpause()"><i class="fa fa-play" aria-hidden="true" id="control" title="Play/Pause"></i></div>
+                    <div><i class="fa fa-forward" aria-hidden="true" title="Forward"></i></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="music-player mt-5">
+                <nav>
+                    <div class="circle">
+                        <i class="fa fa-chevron-left" aria-hidden="true" title="Nav"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-download" aria-hidden="true" title="Download"></i>
+                    </div>
+                </nav>
+                <img src="img/dont mind.jpg" class="song-img">
+                <h1>Dont Mind</h1>
+                <p>Young Stunners </p>
+
+                <audio  id="song2">
+                    <source src="musics/DONT_MIND_Young_Stunners___Talhah_Yunus___Talha_.mp3" type="audio/mpeg">
+                </audio>
+
+
+                <input type="range" value="0" id="progress2">
+
+                <div class="control">
+                    <div><i class="fa fa-backward" aria-hidden="true"  title="Backward" ></i></div>
+                    <div onclick="playpause2()"><i class="fa fa-play" aria-hidden="true" id="control2"  title="Play/Pause"></i></div>
+                    <div><i class="fa fa-forward" aria-hidden="true"  title="Forward"></i></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="music-player mt-5">
+                <nav>
+                    <div class="circle">
+                        <i class="fa fa-chevron-left" aria-hidden="true" title="Nav"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-download" aria-hidden="true" title="Download"></i>
+                    </div>
+                </nav>
+                <img src="img/khani sno.jpg" class="song-img">
+                <h1>Khani Suno</h1>
+                <p>Khaifi Khalil </p>
+
+                <audio  id="song3">
+                    <source src="musics/Kaifi Khalil - Kahani Suno 2.0 [Official Music Video].mp4" type="audio/mpeg">
+                </audio>
+
+
+                <input type="range" value="0" id="progress3">
+
+                <div class="control">
+                    <div><i class="fa fa-backward" aria-hidden="true"  title="Backward"  title="Backward"></i></div>
+                    <div onclick="playpause3()"><i class="fa fa-play" aria-hidden="true" id="control3"  title="Play/Pause"></i></div>
+                    <div><i class="fa fa-forward" aria-hidden="true"  title="Forward"></i></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="music-player mt-5">
+                <nav>
+                    <div class="circle">
+                        <i class="fa fa-chevron-left" aria-hidden="true" title="Nav"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-download" aria-hidden="true" title="Download"></i>
+                    </div>
+                </nav>
+                <img src="img/tum.jpg" class="song-img">
+                <h1>Tum Mile</h1>
+                <p>Slowed & Reverb</p>
+
+                <audio  id="song4">
+                    <source src="musics/Tum_Mile_Slowed_Reverb_Javed_Ali___Textaudio_L.mp3" type="audio/mpeg">
+                </audio>
+
+
+                <input type="range" value="0" id="progress4">
+
+                <div class="control">
+                    <div><i class="fa fa-backward" aria-hidden="true"  title="Backward"></i></div>
+                    <div onclick="playpause4()"><i class="fa fa-play" aria-hidden="true" id="control4"   title="Play/Pause"></i></div>
+                    <div><i class="fa fa-forward" aria-hidden="true"  title="Forward"></i></div>
+                </div>
+            </div>
+            
+        </div>
+
+
+   
+        
+
+        
+        
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="music-player mt-5">
+                <nav>
+                    <div class="circle">
+                        <i class="fa fa-chevron-left" aria-hidden="true" title="Nav"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-download" aria-hidden="true" title="Download"></i>
+                    </div>
+                </nav>
+                <img src="img/goat.jpg" class="song-img">
+                <h1>So High</h1>
+                <p>Sidhu Moose Wala</p>
+
+                <audio  id="song5">
+                    <source src="musics/So High - Official Music Video - Sidhu Moose Wala ft. BYG BYRD - Humble Music.mp4" type="audio/mpeg">
+                </audio>
+
+
+                <input type="range" value="0" id="progress5">
+
+                <div class="control">
+                    <div><i class="fa fa-backward" aria-hidden="true" title="Backward"></i></div>
+                    <div onclick="playpause5()"><i class="fa fa-play" aria-hidden="true" id="control5" title="Play/Pause"></i></div>
+                    <div><i class="fa fa-forward" aria-hidden="true" title="Forward"></i></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="music-player mt-5">
+                <nav>
+                    <div class="circle">
+                        <i class="fa fa-chevron-left" aria-hidden="true" title="Nav"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-download" aria-hidden="true" title="Download"></i>
+                    </div>
+                </nav>
+                <img src="img/ckay.jpg" class="song-img">
+                <h1>Ckay-Love</h1>
+                <p>Slowed & Reverb</p>
+
+                <audio  id="song6">
+                    <source src="musics/ckay -love nwantiti (tiktok remix) slowed + reverb +Lyrics.mp4" type="audio/mpeg">
+                </audio>
+
+
+                <input type="range" value="0" id="progress6">
+
+                <div class="control">
+                    <div><i class="fa fa-backward" aria-hidden="true"  title="Backward" ></i></div>
+                    <div onclick="playpause6()"><i class="fa fa-play" aria-hidden="true" id="control6"  title="Play/Pause"></i></div>
+                    <div><i class="fa fa-forward" aria-hidden="true"  title="Forward"></i></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="music-player mt-5">
+                <nav>
+                    <div class="circle">
+                        <i class="fa fa-chevron-left" aria-hidden="true" title="Nav"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-download" aria-hidden="true" title="Download"></i>
+                    </div>
+                </nav>
+                <img src="img/xxxte.jpg" class="song-img">
+                <h1>EveryBody Dies </h1>
+                <p>xxxtentaction </p>
+
+                <audio  id="song7">
+                    <source src="musics/XXXTENTACION - Everybody Dies In Their Nightmares (Audio).mp4" type="audio/mpeg">
+                </audio>
+
+
+                <input type="range" value="0" id="progress7">
+
+                <div class="control">
+                    <div><i class="fa fa-backward" aria-hidden="true"  title="Backward"  title="Backward"></i></div>
+                    <div onclick="playpause7()"><i class="fa fa-play" aria-hidden="true" id="control7"  title="Play/Pause"></i></div>
+                    <div><i class="fa fa-forward" aria-hidden="true"  title="Forward"></i></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="music-player mt-5">
+                <nav>
+                    <div class="circle">
+                        <i class="fa fa-chevron-left" aria-hidden="true" title="Nav"></i>
+                    </div>
+                    <div class="circle">
+                        <i class="fa fa-download" aria-hidden="true" title="Download"></i>
+                    </div>
+                </nav>
+                <img src="img/welcome.jpg" class="song-img">
+                <h1>Welcome </h1>
+                <p>Billie Eilish</p>
+
+                <audio  id="song8">
+                    <source src="musics/Billie Eilish, Khalid - lovely.mp4" type="audio/mpeg">
+                </audio>
+
+
+                <input type="range" value="0" id="progress8">
+
+                <div class="control">
+                    <div><i class="fa fa-backward" aria-hidden="true"  title="Backward"></i></div>
+                    <div onclick="playpause8()"><i class="fa fa-play" aria-hidden="true" id="control8"   title="Play/Pause"></i></div>
+                    <div><i class="fa fa-forward" aria-hidden="true"  title="Forward"></i></div>
+                </div>
+            </div>
+            
+        </div>
+
+
+   
+        
+
+        
+        
+    </div>
+    <div class="Talha-btn">
+        <button class="Talha-button">Explore More</button>
+     </div>
+    
+</div>
+
+
+
+
+
+   
+  </section>
+  <!-- library work end -->
+
+
+
+
+
+
+
+
+  <script>
+    let progress1=document.getElementById("progress")
+    let song1=document.getElementById("song")
+    let control1=document.getElementById("control")
+    
+    song1.onloadedmetadata = function(){
+        progress1.max = song1.duration;
+        progress1.value = song1.currentTime;
+    }
+    
+    function playpause(){
+        if(control1.classList.contains("fa-pause")){
+            song1.pause();
+            control1.classList.remove("fa-pause")
+            control1.classList.add("fa-play")
+        }
+        else{
+            song1.play();
+            control1.classList.add("fa-pause")
+            control1.classList.remove("fa-play")
+        }control1
+    
+    }
+    
+    if(song1.play()){
+        setInterval(() => {
+            progress1.value = song1.currentTime;
+        }, 500);
+    }
+    
+    progress1.onchange = function(){
+        song1.play();
+        song1.currentTime = progress1.value;
+        control1.classList.add("fa-pause")
+        control1.classList.remove("fa-play")
+    }
+
+    
+
+    let progress2=document.getElementById("progress2")
+    let song2=document.getElementById("song2")
+    let control2=document.getElementById("control2")
+    
+    song2.onloadedmetadata = function(){
+        progress2.max = song2.duration;
+        progress2.value = song2.currentTime;
+    }
+    
+    function playpause2(){
+        if(control2.classList.contains("fa-pause")){
+            song2.pause();
+            control2.classList.remove("fa-pause")
+            control2.classList.add("fa-play")
+        }
+        else{
+            song2.play();
+            control2.classList.add("fa-pause")
+            control2.classList.remove("fa-play")
+        }
+    
+    }
+    
+    if(song2.play()){
+        setInterval(() => {
+            progress2.value = song2.currentTime;
+        }, 500);
+    }
+    
+    progress2.onchange = function(){
+        song2.play();
+        song2.currentTime = progress2.value;
+        control2.classList.add("fa-pause")
+        control2.classList.remove("fa-play")
+    }
+    
+
+    let progress3=document.getElementById("progress3")
+    let song3=document.getElementById("song3")
+    let control3=document.getElementById("control3")
+    
+    song3.onloadedmetadata = function(){
+        progress3.max = song3.duration;
+        progress3.value = song3.currentTime;
+    }
+    
+    function playpause3(){
+        if(control3.classList.contains("fa-pause")){
+            song3.pause();
+            control3.classList.remove("fa-pause")
+            control3.classList.add("fa-play")
+        }
+        else{
+            song3.play();
+            control3.classList.add("fa-pause")
+            control3.classList.remove("fa-play")
+        }
+    
+    }
+    
+    if(song3.play()){
+        setInterval(() => {
+            progress3.value = song3.currentTime;
+        }, 500);
+    }
+    
+    progress3.onchange = function(){
+        song3.play();
+        song3.currentTime = progress3.value;
+        control3.classList.add("fa-pause")
+        control3.classList.remove("fa-play")
+    }
+    
+
+    let progress4=document.getElementById("progress4")
+    let song4=document.getElementById("song4")
+    let control4=document.getElementById("control4")
+    
+    song4.onloadedmetadata = function(){
+        progress4.max = song4.duration;
+        progress4.value = song4.currentTime;
+    }
+    
+    function playpause4(){
+        if(control4.classList.contains("fa-pause")){
+            song4.pause();
+            control4.classList.remove("fa-pause")
+            control4.classList.add("fa-play")
+        }
+        else{
+            song4.play();
+            control4.classList.add("fa-pause")
+            control4.classList.remove("fa-play")
+        }
+    
+    }
+    
+    if(song4.play()){
+        setInterval(() => {
+            progress4.value = song4.currentTime;
+        }, 500);
+    }
+    
+    progress4.onchange = function(){
+        song4.play();
+        song4.currentTime = progress4.value;
+        control4.classList.add("fa-pause")
+        control4.classList.remove("fa-play")
+    }
+
+
+    let progress5=document.getElementById("progress5")
+    let song5=document.getElementById("song5")
+    let control5=document.getElementById("control5")
+    
+    song5.onloadedmetadata = function(){
+        progress5.max = song5.duration;
+        progress5.value = song5.currentTime;
+    }
+    
+    function playpause5(){
+        if(control5.classList.contains("fa-pause")){
+            song5.pause();
+            control5.classList.remove("fa-pause")
+            control5.classList.add("fa-play")
+        }
+        else{
+            song5.play();
+            control5.classList.add("fa-pause")
+            control5.classList.remove("fa-play")
+        }
+    
+    }
+    
+    if(song5.play()){
+        setInterval(() => {
+            progress5.value = song5.currentTime;
+        }, 500);
+    }
+    
+    progress5.onchange = function(){
+        song5.play();
+        song5.currentTime = progress5.value;
+        control5.classList.add("fa-pause")
+        control5.classList.remove("fa-play")
+    }
+    
+
+    let progress6=document.getElementById("progress6")
+    let song6=document.getElementById("song6")
+    let control6=document.getElementById("control6")
+    
+    song6.onloadedmetadata = function(){
+        progress6.max = song6.duration;
+        progress6.value = song6.currentTime;
+    }
+    
+    function playpause6(){
+        if(control6.classList.contains("fa-pause")){
+            song6.pause();
+            control6.classList.remove("fa-pause")
+            control6.classList.add("fa-play")
+        }
+        else{
+            song6.play();
+            control6.classList.add("fa-pause")
+            control6.classList.remove("fa-play")
+        }
+    
+    }
+    
+    if(song6.play()){
+        setInterval(() => {
+            progress6.value = song6.currentTime;
+        }, 500);
+    }
+    
+    progress6.onchange = function(){
+        song6.play();
+        song6.currentTime = progress6.value;
+        control6.classList.add("fa-pause")
+        control6.classList.remove("fa-play")
+    }
+
+
+    let progress7=document.getElementById("progress7")
+    let song7=document.getElementById("song7")
+    let control7=document.getElementById("control7")
+    
+    song7.onloadedmetadata = function(){
+        progress7.max = song7.duration;
+        progress7.value = song7.currentTime;
+    }
+    
+    function playpause7(){
+        if(control7.classList.contains("fa-pause")){
+            song7.pause();
+            control7.classList.remove("fa-pause")
+            control7.classList.add("fa-play")
+        }
+        else{
+            song7.play();
+            control7.classList.add("fa-pause")
+            control7.classList.remove("fa-play")
+        }
+    
+    }
+    
+    if(song7.play()){
+        setInterval(() => {
+            progress7.value = song7.currentTime;
+        }, 500);
+    }
+    
+    progress7.onchange = function(){
+        song7.play();
+        song7.currentTime = progress7.value;
+        control7.classList.add("fa-pause")
+        control7.classList.remove("fa-play")
+    }
+    
+
+    
+    let progress8=document.getElementById("progress8")
+    let song8=document.getElementById("song8")
+    let control8=document.getElementById("control8")
+    
+    song8.onloadedmetadata = function(){
+        progress8.max = song8.duration;
+        progress8.value = song8.currentTime;
+    }
+    
+    function playpause8(){
+        if(control8.classList.contains("fa-pause")){
+            song8.pause();
+            control8.classList.remove("fa-pause")
+            control8.classList.add("fa-play")
+        }
+        else{
+            song8.play();
+            control8.classList.add("fa-pause")
+            control8.classList.remove("fa-play")
+        }
+    
+    }
+    
+    if(song8.play()){
+        setInterval(() => {
+            progress8.value = song8.currentTime;
+        }, 500);
+    }
+    
+    progress8.onchange = function(){
+        song8.play();
+        song8.currentTime = progress8.value;
+        control8.classList.add("fa-pause")
+        control8.classList.remove("fa-play")
+    }
+    
+    
+    
+    
+    
+    
+   
+    
+    
+    
+    
+    
+    </script>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

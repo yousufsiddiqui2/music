@@ -1,0 +1,852 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+a h3{
+    color: white;
+
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* header css start  */
+.header{
+    width: 100%;
+    height: auto;
+    background: black;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar-nav {
+    margin-left: 150px;
+    display: flex;
+}
+.navbar li{
+    font: 400;
+    padding: 10px;
+    font-size: 18px;
+  ;
+    
+    
+}
+.navbar li a{
+    position: relative;
+    text-decoration: none;
+    
+}
+.navbar li a::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(0, 255, 174);
+    transition: .5s;
+
+}
+.navbar li :hover{
+    color:rgb(0, 255, 174) !important;
+}
+.navbar li a:hover::before{
+    width: 100%;
+   
+}
+
+/* login button css start */
+.login-button{
+    width: 15%;
+    height: 50px;
+    margin: 10px 10px;
+    background: transparent;
+    border:2px solid rgb(0, 255, 174) ;
+    font-size: 25px;
+    transition: .3s;
+}
+.login-button a{
+    color: rgb(0, 255, 174) ;
+    font-family: 'Lobster',cursive;
+    text-decoration: none;
+    transition: .3s;
+
+}
+
+.login-button:hover{
+    background: rgb(0, 255, 123) ;
+    z-index: 1;
+}
+.login-button:hover a{
+    color: white;
+    text-decoration: none;
+}
+/* login button css end  */
+/* home page css */
+.header-section{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.789)),url("../img/musss.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+}
+
+.heading-div{
+    width: 100%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+.heading-div h2{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-top: 120px;
+    
+}
+.heading-div p{
+    font-size: 15px;
+    color: rgb(202, 193, 193);
+}
+
+
+
+.social-icon{
+    width: 100%;
+    text-align: center;
+    margin-top: 320px;
+    
+   
+}
+ .music-button{
+    width: 60%;
+    height: 100px;
+    text-align: center;
+    border: 2px solid rgb(15, 104, 66);
+    background:transparent;
+    color: rgb(0, 255, 145);
+    z-index: 1;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+    overflow: hidden;
+}
+.music-button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(4, 250, 176, 0.932);
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: .3s;
+    z-index: -1;
+   
+    
+
+
+}
+.music-button:hover{
+    color: white !important;
+}
+.music-button:hover::before
+{
+    transform: translateX(0);
+    
+}
+/* home page css End  */
+/* artist section start  */
+.artist-section{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.789)),url("../img/musss.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.artistsss h2{
+
+    font-size: 55px;
+    color: white !important;
+    margin-top: 100px;
+    font-family: 'Lobster',cursive;
+}
+.artist-img{
+   text-align: center;
+   color: white;
+   position: relative;
+    margin-top: 50px;
+   margin-bottom: 50px;
+    
+}
+.artist-img img{
+    width: 100%;
+    height: 250px;
+    
+  
+}
+.img-text,
+.artist-img::before{
+    width: 100%;
+    position: absolute;
+    left: 01;
+}
+.artist-img::before{
+    content: '';
+    height: 100%;
+    top: 0;
+    transition: .5s;
+
+}
+
+.artist-img:hover::before{
+    background: linear-gradient(to bottom, rgba(0, 199, 129, 0.1)0, rgba(0, 199, 159, 0.25)25%,
+    rgba(0, 199, 166, 0.75)75%, rgba(0, 199, 139, 0.95) 100%);
+  
+    
+}
+.img-text{
+    padding: 20px;
+    margin-bottom: 20px;
+    bottom: 0;
+    z-index: 1;
+    transform: translateY(50px);
+    transition: all .5s cubic-bezier(.13,.62,.81,.91) 0s;
+    cursor: pointer;
+    opacity: 0;
+    font-size: 20px;
+}
+.artist-img:hover .img-text{
+    transform: translateY(0);
+    opacity: 9;
+}
+/* artist section end   */
+/* music library */
+.containers{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.789)),url("../img/musss.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.containers h3{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+.music-player{
+    background: linear-gradient(to bottom, rgba(0, 199, 129, 0.1)0, rgba(0, 199, 159, 0.25)25%,
+    rgba(0, 199, 166, 0.75)75%, rgba(0, 199, 139, 0.95) 100%);
+    width: 100%;
+    padding: 25px 35px;
+    text-align: center;
+}
+.music-player nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  
+}
+.music-player nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 187, 128);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.song-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 8px solid rgb(0, 255, 251);
+    box-shadow: 0 10px 60px rgba(3, 255, 192, 0.788);
+}
+.music-player h1{
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+.music-player p{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress2{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress3{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress4{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress5{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress6{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress7{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress8{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress9{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress10{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress11{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    background: rgb(0, 245, 216);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress2::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress3::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress4::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress5::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress6::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress7::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress8::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress9::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress10::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress11::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress12::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress13::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress14::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress15::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+#progress16::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: rgb(0, 255, 247);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+.control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.control div{
+    width: 50px;
+    height: 40px;
+    background: #fff;
+    margin: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: rgb(0, 255, 229);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.control div:nth-child(2){
+    transform: scale(1.3);
+    background: rgb(255, 255, 255);
+    color:rgb(0, 255, 234);
+}
+/* music library end */
+/* login page start  */
+.Logg{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.789)),url("../img/musss.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 1;
+}
+.login{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-top: 70px;
+    box-shadow:0 0 15px rgba(0, 255, 200, 0.5),0 0 15px rgba(0, 255, 200, 0.5);
+   
+}
+.login h3{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid silver;
+    color: rgb(0, 255, 170);
+}
+.login .form{
+    padding: 20px 40px;
+    box-sizing: border-box;
+
+}
+.form .inputts{
+    position: relative;
+    border-bottom: 2px solid rgb(181, 255, 233);
+    margin: 30px 0;
+}
+.inputts input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: none;
+}
+.inputts label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(0, 255, 200);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.inputts span::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: rgb(0, 255, 149);
+    transition: .5s;
+}
+.inputts input:focus ~label,
+.inputts input:valid ~label{
+    top:-5px;
+    color: rgb(0, 255, 200);
+}
+.inputts input:focus ~ span::before,
+.inputts input:valid ~ span::before{
+    width: 100%;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(0, 255, 200);
+    background: rgb(0, 255, 213);
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+}
+input[type="submit"]:hover{
+    background: transparent;
+    color:  rgb(0, 255, 200);
+    transition: .5s;
+}
+
+.signup{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+.signup a{
+    color: rgb(0, 255, 213);
+    text-decoration: none;
+
+}
+.signup a:hover{
+    text-decoration: underline;
+    color: rgb(0, 255, 213);
+}
+input[type=checkbox]{
+   padding: 10px;
+   margin-right: 20px;
+   color: #666666;
+}
+
+/* login page end */
+
+/* talha anjum songs */
+.header-div{
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.789)),url("../img/musss.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    margin-top: 20px;
+    text-align: center;
+}
+.header-div h2{
+    color: white;
+    margin-top: 150px;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.header-div p{
+    color: white;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 20px;
+}
+.talha-div{
+    width: 100%;
+    height: auto;
+    background: rgb(0, 33, 18);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 20px
+
+
+}
+.Talha-btn{
+    width: 100%;
+    text-align: center;
+    margin-top: 70px;
+    
+   
+}
+ .Talha-button{
+    width: auto;
+    height: 80px;
+    text-align: center;
+    border: 2px solid rgba(0, 255, 149, 0.842);
+    background:transparent;
+    color: rgba(0, 255, 149, 0.842);
+    z-index: 1;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    transition: .8s;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.Talha-button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(0, 255, 149, 0.842);
+    width: 100%;
+    height: 100%;
+    transform: translateY(-100%);
+    transition: .8s;
+    z-index: -1;
+   
+    
+
+
+}
+.Talha-button:hover{
+    color: white !important;
+   
+}
+.Talha-button:hover::before
+{
+    transform: translateX(0);
+    
+}
+
+
+
+
+
+/* talha anjum end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:767px){
+    .social-icon{
+    margin-top: 50px;
+    padding-bottom: 50px;
+    }
+    .artist-img img{
+        height: 400px;
+    }
+}
+
+@media(max-width:994px){
+    .navbar-nav{
+        margin-left: 0;
+    }
+    .login-button{
+        width: 20%;
+    }
+}
+@media(max-width:742px){
+    .navbar-nav li{
+        padding: 0;
+    }
+    .login-button{
+        width: 30%;
+    }
+    
+}
+@media(max-width:633px){
+    .navbar-nav li a{
+        font-size: 12px;
+    }
+    .login-button a{
+        font-size: 20px;
+    }
+
+}
+@media(max-width:575px)
+{
+    .login-button{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+@media(max-width:430px){
+    .login{
+        width: 300px;
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:305px){
+    .login{
+        width: 230px;
+
+    }
+}
+ 
+
+
